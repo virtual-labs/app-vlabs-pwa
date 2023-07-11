@@ -600,9 +600,9 @@ export default function ExperimentLoader(props) {
                             }
                         </div>) : null}
                 </div>
-                <div id="divider" className="is-divider-vertical is-black is-hidden-mobile is-hidden-desktop is-hidden-tablet"></div>
+                <div id="divider" className="is-divider-vertical is-black is-hidden-mobile is-hidden-desktop is-hidden-tablet" style={{padding:"0px"}}></div>
                 <div id="filter-set" className='column is-2 is-hidden-mobile is-hidden-desktop is-hidden-tablet'>
-                    <div className=" " style={{ width: "80%", textAlign: "center", whiteSpace: "nowrap", overflow: "auto" }}>
+                    <div className=" " style={{ textAlign: "center", whiteSpace: "nowrap", overflow: "auto" }}>
 
                         {apply ? <>
                             <span style={{ display: "inline-block", whiteSpace: "normal" }}>
@@ -614,7 +614,7 @@ export default function ExperimentLoader(props) {
                                 <button className='button is-primary has-text-black is-medium' style={{ border: "2px solid black", borderTopRightRadius: "20px", borderBottomRightRadius: "20px" }} onClick={() => {
                                     setApply(0);
                                 }}>
-                                    <BsFillSave2Fill />{" "}Load
+                                    <BsFillSave2Fill />&nbsp;Load
                                 </button>
 
                             </span></> : null}
@@ -628,7 +628,7 @@ export default function ExperimentLoader(props) {
                             </span >
                             <span style={{ display: "inline-block", whiteSpace: "normal" }}>
                                 <button className='button is-info has-text-black is-medium' style={{ border: "2px solid black", borderTopRightRadius: "20px", borderBottomRightRadius: "20px" }}>
-                                    <BsFillSave2Fill />{" "}Load
+                                    <BsFillSave2Fill />&nbsp;Load
                                 </button>
 
                             </span></> : null}
