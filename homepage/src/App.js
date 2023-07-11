@@ -12,6 +12,7 @@ function App() {
   const [page, setPage] = useState(1)
   const [totalPage, setTotal] = useState(1)
   const [Pop, setPop] = useState([])
+  const [fetched,setFetched] =useState(0)
   const PrevPage = () => {
     setPage(page - 1)
   }
@@ -27,6 +28,7 @@ function App() {
         setTotal(Math.ceil(data.length / 8))
         let copy = [...data]
         setPop(copy.sort((a, b) => b["Pageviews"] - a["Pageviews"]))
+        setFetched(1)
       });
   }, []);
   const SearchExp = (e) => {
@@ -40,7 +42,7 @@ function App() {
     }
     else {
       document.getElementById("filter-set").className = 'column is-2 is-hidden-mobile is-hidden-tablet-only mr-4';
-      document.getElementById("divider").className = 'is-divider-vertical is-black is-hidden-mobile is-hidden-tablet-only';
+      document.getElementById("divider").className = 'is-divider-vertical is-black is-hidden-mobile is-hidden-tablet-only m-0';
     }
     document.getElementById("filter-model").className = document.getElementById("filter-model").className + " is-active"
   }
@@ -49,9 +51,9 @@ function App() {
       <Navbar setp={setPage} settp={setTotal} nav={nav} setNav={setNav} />
       <div className='columns is-vcentered is-mobile m-0'>
         <div className=" column mb-0 is-hidden-mobile is-hidden-tablet-only is-2-desktop ml-4 mt-2" >
-          <img alt="" className="image" style={{padding:"0px"}} width="200" height="200" src={"https://cdn.vlabs.ac.in/logo/vlead-large.png"}/>
+          <img alt="" className="image" style={{ padding: "0px" }} width="200" height="200" src={"https://cdn.vlabs.ac.in/logo/vlead-large.png"} />
         </div>
-        <div className='column is-three-fifths-desktop ' style={{margin:"auto"}}>
+        <div className='column is-three-fifths-desktop ' style={{ margin: "auto" }}>
           <div className="field has-addons">
             <div className='control' style={{ marginTop: "auto", marginBottom: "auto" }}>
               <p className="control has-icons-left">
@@ -69,10 +71,10 @@ function App() {
           </div>
         </div>
       </div>
-      
+
       <ExperimentLoader experiments={experiments} word={word} pagenum={page} setp={setPage} settp={setTotal} nav={nav} setNav={setNav} pop={Pop} />
       {
-        totalPage !==0 ?
+        totalPage !== 0 ?
           <footer className="footer" style={{ padding: "2%", backgroundColor: "lightcyan" }}>
             <div className="content has-text-centered">
               <button className=' button is-dark has-text-white is-pulled-left ml-1' style={{ fontSize: '20px' }}
@@ -87,7 +89,13 @@ function App() {
                 Page {page} of {totalPage}
               </p>
             </div>
-          </footer> : <h1 className='has-text-black has-text-centered is-size-1'>No Results Found</h1>}
+          </footer> : <span>
+            {fetched ?
+              <h1 className='has-text-black has-text-centered is-size-1'>No Results Found</h1> 
+              : <h1 className='has-text-black has-text-centered is-size-1'>Loading</h1>
+            }
+          </span>
+      }
     </>
   );
 }
