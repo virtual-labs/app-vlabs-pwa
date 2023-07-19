@@ -320,7 +320,7 @@ export default function ExperimentLoader(props) {
                                     })
                                 }
                             </div>
-                                <div className="is-divider is-black"></div>
+                                <hr style={{"backgroundColor":"black"}}/>
                                 <div className="field mb-4 ml-4">
                                     <label className="label m-2 is-size-4 has-text-primary" style={{ textShadow: "0.15rem 0.15rem #D5F2D8" }}>Discipline</label>
                                     {
@@ -600,8 +600,7 @@ export default function ExperimentLoader(props) {
                             }
                         </div>) : null}
                 </div>
-                <div id="divider" className="is-divider-vertical is-black is-hidden-mobile is-hidden-desktop is-hidden-tablet" style={{padding:"0px"}}></div>
-                <div id="filter-set" className='column is-2 is-hidden-mobile is-hidden-desktop is-hidden-tablet'>
+                <div id="filter-set" className='column is-2 is-hidden-mobile is-hidden-desktop is-hidden-tablet' style={{"borderLeft":"3px solid black"}}>
                     <div className=" " style={{ textAlign: "center", whiteSpace: "nowrap", overflow: "auto" }}>
 
                         {apply ? <>
@@ -660,7 +659,7 @@ export default function ExperimentLoader(props) {
                                 })
                             }
                         </div>
-                        <div className="is-divider is-black"></div>
+                        <hr style={{"backgroundColor":"black"}}></hr>
                         <div className="field mb-4 ml-4">
                             <label className="label m-2 is-size-4 has-text-black">Discipline</label>
                             {
@@ -686,7 +685,7 @@ export default function ExperimentLoader(props) {
                                 })
                             }
                         </div>
-                        <div className="is-divider is-black"></div>
+                        <hr style={{"backgroundColor":"black"}}/>
                         <div className='has-text-centered'>
                             <button id="but-1" className='button is-info is-rounded mr-4' style={{ padding: "8px" }} onClick={ClearFilter}><AiFillDelete />Clear</button>
                             <button id="but-2" className='button is-info is-rounded' style={{ padding: "8px" }} onClick={SaveFilter}><BsFillBookmarkPlusFill />Save</button>
