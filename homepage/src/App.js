@@ -38,11 +38,9 @@ function App() {
     console.log(document.getElementById("filter-set").className)
     if (!document.getElementById("filter-set").className.includes("is-hidden-desktop is-hidden-tablet")) {
       document.getElementById("filter-set").className = document.getElementById("filter-set").className + " is-hidden-desktop is-hidden-tablet";
-      document.getElementById("divider").className = document.getElementById("divider").className + " is-hidden-desktop is-hidden-tablet";
     }
     else {
       document.getElementById("filter-set").className = 'column is-2 is-hidden-mobile is-hidden-tablet-only mr-4';
-      document.getElementById("divider").className = 'is-divider-vertical is-black is-hidden-mobile is-hidden-tablet-only m-0';
     }
     document.getElementById("filter-model").className = document.getElementById("filter-model").className + " is-active"
   }
@@ -101,7 +99,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
