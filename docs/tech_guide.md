@@ -55,6 +55,9 @@
 `This lambda function checks the header of the POST request and only passes on the request, if the credentials provided are correct
 # Source File:
 * The data for all the experiments is contained in this [Google Spreadsheet](https://docs.google.com/spreadsheets/u/0/d/1x12nhpp0QvnsA6x-O1sV4IA9SAbfVsq_wiexWkutOmU/edit)  inside the sheet named ‘Experiment-Database’. A trigger has been set for the app script ‘pwa.gs’ which fills the data into database tables once every 24 hours.
+# Experiment Metadata DynamoDB Database
+* Link for Dynamodb to fetch experiment data
+https://8kne7udek3.execute-api.ap-southeast-2.amazonaws.com/items
 # Deployment/Usage: 
 * Frontend
     * To create the static website, simply run `npm run build` inside the node folder. Static website is then hosted on the backend, other steps taken to run the app are mentioned below.
