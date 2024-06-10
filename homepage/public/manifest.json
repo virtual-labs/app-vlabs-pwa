@@ -3,7 +3,7 @@
   "name": "Virtual Labs - Virtual Experiments Panel",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "icon.png",
       "sizes": "192x192",
       "type": "image/png"
     }
