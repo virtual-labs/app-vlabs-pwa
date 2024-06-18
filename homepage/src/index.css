@@ -9,7 +9,8 @@ body {
 
 html,
 body {
-  background-image: linear-gradient(#F5F5DC, lightcyan) !important;
+  /* background-image: linear-gradient(#F5F5DC, lightcyan) !important; */
+  background-color: white;
 }
 
 code {
@@ -28,4 +29,4 @@ body {
   display: block!important;
   position: relative !important;
   overflow: hidden;
-}
+} 
