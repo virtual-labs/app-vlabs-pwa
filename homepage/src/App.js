@@ -15,6 +15,8 @@ function App() {
   const [totalPage, setTotal] = useState(1);
   const [Pop, setPop] = useState([]);
   const [fetched, setFetched] = useState(0);
+  const [filterActive, setFilterActive] = useState(false);
+  const [isSearchFocused, setIsSearchFocused] = useState(false);
 
   const PrevPage = () => {
     setPage(page - 1);
@@ -42,6 +44,7 @@ function App() {
   };
 
   const ToggleFilter = () => {
+    setFilterActive(!filterActive);
     console.log(document.getElementById("filter-set").className);
     if (!document.getElementById("filter-set").className.includes("is-hidden-desktop is-hidden-tablet")) {
       document.getElementById("filter-set").className = document.getElementById("filter-set").className + " is-hidden-desktop is-hidden-tablet";
@@ -61,14 +64,33 @@ function App() {
         <div className='column is-three-fifths-desktop' style={{ margin: "auto" }}>
           <div className="field has-addons" style={{ display: "flex", alignItems: "center" }}>
             <div className="control" style={{ marginRight: "10px" }}>
-              <button id="button-style" className="button is-white has-text-gray" style={{ borderRadius: "50px", borderWidth: "1px", borderColor: "black", padding: "0.5rem 1rem" }} onClick={ToggleFilter}>
+              <button
+                id="button-style"
+                className={`button ${filterActive ? 'is-dark has-text-white' : 'is-white has-text-gray'}`}
+                style={{ borderRadius: "50px", borderWidth: "1px", borderColor: "black", padding: "0.5rem 1rem" }}
+                onClick={ToggleFilter}
+              >
                 <HiFilter /> Filter
               </button>
             </div>
-            <div class="control has-icons-left has-icons-right" style={{width: "100%"}}>
-              <input class="input is-normal" type="search" placeholder="Search" style={{ borderRadius: "290000px", borderWidth: "1px", borderColor: "black"}} onChange={SearchExp} />
-              <span class="icon is-small is-left">
-              <span class="material-symbols-outlined">search</span>
+            <div className="control has-icons-left has-icons-right" style={{ width: "100%" }}>
+              <input
+                className="input is-normal"
+                type="search"
+                placeholder="Search Experiment"
+                style={{
+                  borderRadius: "290000px",
+                  borderWidth: "1px",
+                  borderColor: "black",
+                  width: isSearchFocused ? "100%" : "80%",
+                  transition: "width 0.3s ease"
+                }}
+                onChange={SearchExp}
+                onFocus={() => setIsSearchFocused(true)}
+                onBlur={() => setIsSearchFocused(false)}
+              />
+              <span className="icon is-small is-left">
+                <span className="material-symbols-outlined">search</span>
               </span>
             </div>
           </div>
@@ -77,20 +99,18 @@ function App() {
       <hr style={{backgroundColor:"#000000", height: "1px", margin:"0 0 0 0"}}></hr>
       <ExperimentLoader experiments={experiments} word={word} pagenum={page} setp={setPage} settp={setTotal} nav={nav} setNav={setNav} pop={Pop} />
 
-      
-
       {totalPage !== 0 ? (
-        <footer className="footer" style={{ padding: "2%", backgroundColor: "lightcyan" }}>
+        <footer className="footer" style={{ padding: "1.5%", backgroundColor: "black" }}>
           <div className="content has-text-centered">
-            <button className='button is-dark has-text-white is-pulled-left ml-1' style={{ fontSize: '20px' }}
+            <button className='button is-dark has-text-white is-pulled-left is-normal' style={{ fontSize: '15px' }}
               disabled={page === 1} onClick={PrevPage}>
               <AiOutlineArrowLeft />&nbsp;Previous
             </button>
-            <button className='button is-dark has-text-white is-pulled-right mr-1' style={{ fontSize: '20px' }}
+            <button className='button is-dark has-text-white is-pulled-right is-normal' style={{ fontSize: '15px' }}
               disabled={page === totalPage} onClick={NextPage}>
               Next&nbsp;<AiOutlineArrowRight />
             </button>
-            <p className='has-text-black is-size-4'>
+            <p className='has-text-white' style={{fontSize:"100%"}}>
               Page {page} of {totalPage}
             </p>
           </div>
@@ -99,9 +119,9 @@ function App() {
         <span>
           {fetched ? (
             <h1 className='has-text-black has-text-centered is-size-1'>No Results Found</h1>
-            ) : (
-              <h1 className='has-text-black has-text-centered is-size-1'>Loading</h1>
-              )}
+          ) : (
+            <h1 className='has-text-black has-text-centered is-size-1'>Loading</h1>
+          )}
         </span>
       )}
     </>

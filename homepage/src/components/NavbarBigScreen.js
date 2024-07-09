@@ -52,25 +52,25 @@ function NavbarBigScreen(props) {
 
     return (
         <div className="columns is-vcentered is-hidden-mobile is-hidden-tablet-only is-2-desktop"
-		style={{ padding: "0px", marginTop: "10px"}}>
+		style={{ padding: "0px", marginTop: "0", marginBottom: "0"}}>
             <div className="column is-1">
-                <img alt="" className="image" style={{ padding: "0px", marginLeft: "30px", marginRight: "30px" }} width="120" src={"https://cdn.vlabs.ac.in/logo/vlead-large.png"} />
+                <img alt="" className="image" style={{ padding: "0px", marginLeft: "30px", marginRight: "30px" }} width="100" src={"https://cdn.vlabs.ac.in/logo/vlead-large.png"} />
             </div>
             <div className="column" style={{ padding: "0px", marginLeft: "50px", marginRight: "30px" }}>
                 <div className="buttons has-addons">
-                    <button id="popular-tab" className='button is-white has-text-black is-medium'
+                    <button id="popular-tab" className='button is-white has-text-black is-normal'
                         style={{ ...getButtonStyle('popular')}} onClick={LoadPop}>
                         <AiFillStar /> Popular
                     </button>
-                    <button id="recent-tab" className='button is-white has-text-black is-medium'
+                    <button id="recent-tab" className='button is-white has-text-black is-normal'
                         style={getButtonStyle('recent')} onClick={LoadRecents}>
                         <RxCounterClockwiseClock /> Recents
                     </button>
-                    <button id="all-tab" className='button is-white has-text-black is-medium'
+                    <button id="all-tab" className='button is-white has-text-black is-normal'
                         style={getButtonStyle('all')} onClick={LoadAll}>
                         <AiFillExperiment /> All Experiments
                     </button>
-                    <button id="save-tab" className='button is-white has-text-black is-medium'
+                    <button id="save-tab" className='button is-white has-text-black is-normal'
                         style={{ ...getButtonStyle('saved')}} onClick={LoadSaved}>
                         <BsFillBookmarkStarFill /> Starred
                     </button>
