@@ -58,21 +58,11 @@ function App() {
     <>
       <Navbar setp={setPage} settp={setTotal} nav={nav} setNav={setNav} />
       <NavbarBigScreen experiments={experiments} word={word} pagenum={page} setp={setPage} settp={setTotal} nav={nav} setNav={setNav} pop={Pop} />
-
-      <hr style={{backgroundColor:"#000000", height: "1px", margin:"0 0 0 0"}}></hr>
+  
+      <hr style={{ backgroundColor: "#000000", height: "1px", margin: "0 0 0 0" }}></hr>
       <div className='columns is-vcentered is-mobile m-0'>
         <div className='column is-three-fifths-desktop' style={{ margin: "auto" }}>
           <div className="field has-addons" style={{ display: "flex", alignItems: "center" }}>
-            <div className="control" style={{ marginRight: "10px" }}>
-              <button
-                id="button-style"
-                className={`button ${filterActive ? 'is-dark has-text-white' : 'is-white has-text-gray'}`}
-                style={{ borderRadius: "50px", borderWidth: "1px", borderColor: "black", padding: "0.5rem 1rem" }}
-                onClick={ToggleFilter}
-              >
-                <HiFilter /> Filter
-              </button>
-            </div>
             <div className="control has-icons-left has-icons-right" style={{ width: "100%" }}>
               <input
                 className="input is-normal"
@@ -93,12 +83,22 @@ function App() {
                 <span className="material-symbols-outlined">search</span>
               </span>
             </div>
+            <div className="control" style={{ marginLeft: "10px" }}>
+              <button
+                id="button-style"
+                className={`button ${filterActive ? 'is-dark has-text-white' : 'is-white has-text-gray'}`}
+                style={{ borderRadius: "50px", borderWidth: "1px", borderColor: "black", padding: "0.5rem 1rem" }}
+                onClick={ToggleFilter}
+              >
+                <HiFilter /> Filter
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <hr style={{backgroundColor:"#000000", height: "1px", margin:"0 0 0 0"}}></hr>
+      <hr style={{ backgroundColor: "#000000", height: "1px", margin: "0 0 0 0" }}></hr>
       <ExperimentLoader experiments={experiments} word={word} pagenum={page} setp={setPage} settp={setTotal} nav={nav} setNav={setNav} pop={Pop} />
-
+  
       {totalPage !== 0 ? (
         <footer className="footer" style={{ padding: "1.5%", backgroundColor: "black" }}>
           <div className="content has-text-centered">
@@ -110,7 +110,7 @@ function App() {
               disabled={page === totalPage} onClick={NextPage}>
               Next&nbsp;<AiOutlineArrowRight />
             </button>
-            <p className='has-text-white' style={{fontSize:"100%"}}>
+            <p className='has-text-white' style={{ fontSize: "100%" }}>
               Page {page} of {totalPage}
             </p>
           </div>
@@ -126,6 +126,7 @@ function App() {
       )}
     </>
   );
-}
-
-export default App;
+  }
+  
+  export default App;
+  
