@@ -80,42 +80,6 @@ export default function ExperimentLoader(props) {
         var win = window.open("https://" + link, '_blank');
         win.focus();
     }
-    const LoadRecents = () => {
-        document.getElementById("recent-tab").className = document.getElementById("recent-tab").className.replace("primary", "info")
-        document.getElementById("save-tab").className = document.getElementById("save-tab").className.replace("info", "primary")
-        document.getElementById("all-tab").className = document.getElementById("all-tab").className.replace("info", "primary")
-        document.getElementById("popular-tab").className = document.getElementById("popular-tab").className.replace("info", "primary")
-        props.settp(Math.ceil(History.length / 8))
-        props.setp(1)
-        props.setNav(1);
-    }
-    const LoadSaved = () => {
-        document.getElementById("save-tab").className = document.getElementById("save-tab").className.replace("primary", "info")
-        document.getElementById("all-tab").className = document.getElementById("all-tab").className.replace("info", "primary")
-        document.getElementById("popular-tab").className = document.getElementById("popular-tab").className.replace("info", "primary")
-        document.getElementById("recent-tab").className = document.getElementById("recent-tab").className.replace("info", "primary")
-        props.settp(Math.ceil(saved.length / 8))
-        props.setp(1)
-        props.setNav(2);
-    }
-    const LoadAll = () => {
-        document.getElementById("all-tab").className = document.getElementById("all-tab").className.replace("primary", "info")
-        document.getElementById("save-tab").className = document.getElementById("save-tab").className.replace("info", "primary")
-        document.getElementById("popular-tab").className = document.getElementById("popular-tab").className.replace("info", "primary")
-        document.getElementById("recent-tab").className = document.getElementById("recent-tab").className.replace("info", "primary")
-        props.settp(Math.ceil(Display.length / 8))
-        props.setp(1)
-        props.setNav(0);
-    }
-    const LoadPop = () => {
-        document.getElementById("popular-tab").className = document.getElementById("recent-tab").className.replace("primary", "info")
-        document.getElementById("save-tab").className = document.getElementById("save-tab").className.replace("info", "primary")
-        document.getElementById("all-tab").className = document.getElementById("all-tab").className.replace("info", "primary")
-        document.getElementById("recent-tab").className = document.getElementById("popular-tab").className.replace("info", "primary")
-        props.settp(Math.ceil(History.length / 8))
-        props.setp(1)
-        props.setNav(3);
-    }
     const SaveFilter = () => {
         console.log(saved_filters);
         let a = {};
@@ -429,19 +393,7 @@ export default function ExperimentLoader(props) {
                     </div>
                 </div>
                 <div className='column'>
-                    <div className='has-text-centered'>
-                        <button id="popular-tab" className='button is-info ml-5 has-text-black is-medium is-hidden-mobile is-hidden-tablet-only'
-                            style={{ border: "2px solid black", borderTopLeftRadius: "20px", borderBottomLeftRadius: "20px" }} onClick={LoadPop}><AiFillStar />Popular</button>
-
-                        <button id="recent-tab" className='button is-primary has-text-black is-medium is-hidden-mobile is-hidden-tablet-only'
-                            style={{ border: "2px solid black" }} onClick={LoadRecents}><RxCounterClockwiseClock />Recents</button>
-
-                        <button id="all-tab" className='button is-primary has-text-black is-medium is-hidden-mobile is-hidden-tablet-only'
-                            style={{ border: "2px solid black" }} onClick={LoadAll}><AiFillExperiment />All Experiments</button>
-
-                        <button id="save-tab" className='button is-primary has-text-black is-medium is-hidden-mobile is-hidden-tablet-only'
-                            style={{ border: "2px solid black", borderTopRightRadius: "20px", borderBottomRightRadius: "20px" }} onClick={LoadSaved}><BsFillBookmarkStarFill />Starred</button>
-                    </div>
+                    
                     <br className='is-hidden-mobile is-hidden-tablet-only' />
                     <br className='is-hidden-mobile is-hidden-tablet-only' />
                     {
@@ -605,12 +557,12 @@ export default function ExperimentLoader(props) {
 
                         {apply ? <>
                             <span style={{ display: "inline-block", whiteSpace: "normal" }}>
-                                <button className='button is-info has-text-black is-medium' style={{ border: "2px solid black", borderTopLeftRadius: "20px", borderBottomLeftRadius: "20px" }}>
+                                <button className='button is-white has-text-black is-medium' style={{ border: "2px solid black", borderTopLeftRadius: "20px", borderBottomLeftRadius: "20px" }}>
                                     <BsFillStickyFill />{" "}Apply
                                 </button>
                             </span>
                             <span style={{ display: "inline-block", whiteSpace: "normal" }}>
-                                <button className='button is-primary has-text-black is-medium' style={{ border: "2px solid black", borderTopRightRadius: "20px", borderBottomRightRadius: "20px" }} onClick={() => {
+                                <button className='button is-white has-text-black is-medium' style={{ border: "2px solid black", borderTopRightRadius: "20px", borderBottomRightRadius: "20px" }} onClick={() => {
                                     setApply(0);
                                 }}>
                                     <BsFillSave2Fill />&nbsp;Load
@@ -641,14 +593,14 @@ export default function ExperimentLoader(props) {
                                     if (SelectInstis.includes(element))
                                         return (
                                             <>
-                                                <button className="button is-rounded is-success is-light has-text-black is-small is-focused m-2"
+                                                <button className="button is-success is-dark has-text-black is-small is-focused m-2"
                                                     onClick={() => { ExcludeInsti(element) }} style={{ height: "max-content", whiteSpace: "inherit" }}>{element}</button>
                                             </>
                                         )
                                     else
                                         return (
                                             <>
-                                                <button className="button is-rounded is-danger is-light is-focused is-small m-2 has-text-black"
+                                                <button className="button is-warning is-dark is-focused is-small m-2 has-text-black"
                                                     onClick={() => { IncludeInsti(element) }}
                                                     style={{
                                                         boxShadow: "0 8px 8px 8px rgba(0,0,0,0.4)",
@@ -667,14 +619,14 @@ export default function ExperimentLoader(props) {
                                     if (SelectDisciplines.includes(element))
                                         return (
                                             <>
-                                                <button className="button is-rounded is-success is-light has-text-black is-small is-focused m-2"
+                                                <button className="button is-success is-dark has-text-black is-small is-focused m-2"
                                                     onClick={() => { ExcludeDis(element) }} style={{ height: "max-content", whiteSpace: "inherit" }}>{disc[element]}</button>
                                             </>
                                         )
                                     else
                                         return (
                                             <>
-                                                <button className="button is-rounded is-danger is-light is-focused is-small m-2 has-text-black"
+                                                <button className="button is-warning is-dark is-focused is-small m-2 has-text-black"
                                                     onClick={() => { IncludeDis(element) }}
                                                     style={{
                                                         boxShadow: "0 8px 8px 8px rgba(0,0,0,0.4)",
@@ -687,8 +639,8 @@ export default function ExperimentLoader(props) {
                         </div>
                         <hr style={{"backgroundColor":"black"}}/>
                         <div className='has-text-centered'>
-                            <button id="but-1" className='button is-info is-rounded mr-4' style={{ padding: "8px" }} onClick={ClearFilter}><AiFillDelete />Clear</button>
-                            <button id="but-2" className='button is-info is-rounded' style={{ padding: "8px" }} onClick={SaveFilter}><BsFillBookmarkPlusFill />Save</button>
+                            <button id="but-1" className='button is-danger is-dark mr-4' style={{ padding: "8px" }} onClick={ClearFilter}><AiFillDelete />Clear</button>
+                            <button id="but-2" className='button is-success is-dark' style={{ padding: "8px" }} onClick={SaveFilter}><BsFillBookmarkPlusFill />Save</button>
                         </div>
                     </> : null}
                     {
