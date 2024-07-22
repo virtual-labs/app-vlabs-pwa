@@ -3,9 +3,8 @@ import 'bulma/css/bulma.min.css';
 import 'bulma-divider'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import 'bulma-switch'
-import { RxCounterClockwiseClock } from 'react-icons/rx'
-import { AiFillExperiment, AiFillStar, AiFillStepBackward, AiFillDelete, AiFillSave } from 'react-icons/ai'
-import { BsFillSave2Fill, BsFillBookmarkStarFill, BsFillBookmarkPlusFill, BsFillStickyFill } from 'react-icons/bs';
+import { AiFillStepBackward, AiFillDelete, AiFillSave } from 'react-icons/ai'
+import { BsFillSave2Fill, BsFillBookmarkPlusFill, BsFillStickyFill } from 'react-icons/bs';
 import { BulmaComponent } from 'yatharth-super-lemon'
 export default function ExperimentLoader(props) {
     const [Instis, setInstis] = useState(["option1-Insti", "option2-Insti"])
