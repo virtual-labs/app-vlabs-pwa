@@ -1,5 +1,4 @@
 import 'bulma/css/bulma.min.css';
-import { FcSearch } from 'react-icons/fc';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
 import ExperimentLoader from './components/ExperimentLoader';
 import React, { useState } from 'react';
@@ -55,12 +54,12 @@ const ToggleFilter = () => {
 };
 
 return (
-  <>
+  <div style={{backgroundColor: "#FFFFFF"}}>
     <Navbar setp={setPage} settp={setTotal} nav={nav} setNav={setNav} />
     <NavbarBigScreen experiments={experiments} word={word} pagenum={page} setp={setPage} settp={setTotal} nav={nav} setNav={setNav} pop={Pop} />
 
     <hr style={{ backgroundColor: "#000000", height: "1px", margin: "0 0 0 0" }}></hr>
-    <div className='columns is-vcentered is-mobile m-0'>
+    <div className='columns is-vcentered is-mobile m-0' style={{backgroundColor: "#1C6E8C"}}>
       <div className='column is-three-fifths-desktop' style={{ margin: "auto" }}>
         <div className="field has-addons" style={{ display: "flex", alignItems: "center" }}>
           
@@ -130,7 +129,7 @@ return (
         )}
       </span>
     )}
-  </>
+  </div>
 );
 }
 
