@@ -54,11 +54,5 @@
 ## Conclusion: 
 
 * The Virtual-Labs app provides an intuitive interface for accessing experiments from various disciplines. By utilising the navigation tabs, search functionality, filters, and the ability to star and save filters, you can easily explore and discover experiments based on your interests and requirements.We hope this user manual has helped you understand the functionalities offered by the app. If you have any further questions or need assistance, please feel free to reach out to our support team. Enjoy your journey through the world of Virtual-Labs experiments!
-## Note:
-* In [All Expeirments](https://vlead.vlabs.ac.in/experiments/) page Missing images or "Lab Not Found" messages for experiments might be caused by outdated data in the Google Sheet. Here's how to fix it:
-* Verify Data: Open the "[GA4-Analytics-virtual Labs](https://docs.google.com/spreadsheets/d/1x12nhpp0QvnsA6x-O1sV4IA9SAbfVsq_wiexWkutOmU/edit?gid=1722069818#gid=1722069818)" sheet and go to the "experiment-database" tab. Check if the experiment displayed on the website has entries in columns H, I, and J.
-* Missing Entry? If the experiment isn't present in the "PWA-NQR-Onboarding" tab, add its name to that sheet.
-* Data Refresh: Go to Extensions > Apps Script. Run the "delete_all_items.gs" script to clear the database. (Warning: This will permanently delete existing data.)
-* Update Database: After deletion, run the "pwa.gs" script. This will populate the database with fresh data, potentially resolving the image and lab message issues.
 
 
