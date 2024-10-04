@@ -97,5 +97,11 @@ The easiest way to package the application for the Google Play Store is to use t
     * Now if the data is correct, and still the error remains, go to the AWS server where the lambda functions are hosted and check the error logs for the PWA_POST lambda function. For eg. One problem previously faced was that the request was getting timed out as the default time is 3 seconds before the request is timed out. Now it has been increased to 3 minutes.
 * Pagination not working:
     * If the pagination is not working on switching the tabs or on setting some filters or searches , go to the ‘ExperimentLoader.js’ file. In this file the page numbers are being set everytime a tab is changed or a new filter is applied.
+* In [All Expeirments](https://vlead.vlabs.ac.in/experiments/) page Missing images or "Lab Not Found" messages for experiments might be caused by outdated data in the Google Sheet. Here's how to fix it:
+* Verify Data: Open the "[GA4-Analytics-virtual Labs](https://docs.google.com/spreadsheets/d/1x12nhpp0QvnsA6x-O1sV4IA9SAbfVsq_wiexWkutOmU/edit?gid=1722069818#gid=1722069818)" sheet and go to the "experiment-database" tab. Check if the experiment displayed on the website has entries in columns H, I, and J.
+* Missing Entry? If the experiment isn't present in the "PWA-NQR-Onboarding" tab, add its name to that sheet.
+* Data Refresh: Go to Extensions > Apps Script. Run the "delete_all_items.gs" script to clear the database. (Warning: This will permanently delete existing data.)
+* Update Database: After deletion, run the "pwa.gs" script. This will populate the database with fresh data, potentially resolving the image and lab message issues.
+
 
 	
