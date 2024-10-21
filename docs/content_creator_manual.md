@@ -47,7 +47,7 @@ You can explore the following online sources as examples:
  - [Pngtree](https://pngtree.com/)
  - [Pixabay](https://pixabay.com/)
  - [Unsplash](https://unsplash.com/)
-If you have access, you can also utilize DALL-E for generating the required images.
+ - If you have access, you can also utilize DALL-E for generating the required images.
 
 2. Adhere the the following specifications for the image
 
