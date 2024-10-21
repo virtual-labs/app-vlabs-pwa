@@ -24,7 +24,7 @@ To add an experiment, the following conditions must be met:
 
 To include your experiment in the PWA, please fill the following details in the "Your Institute" tab of the Google Sheet. 
 
-Google Sheet Link: PWA-Onboarding-Sheet
+Google Sheet Link: [PWA-Onboarding-Sheet](https://docs.google.com/spreadsheets/d/1ohrWAzEYdiDQTBM52AUhup2nZB3JRVsm2dG2n9-FHh0/edit?usp=sharing)
 
 <b>S No | <b> Fill the Serial Number of the entry
 :--|:--|
