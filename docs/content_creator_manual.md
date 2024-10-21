@@ -9,6 +9,7 @@ This guide is intended for educators and developers who have developed interacti
 ## Motivation
 
 The PWA platform offers several advantages for showcasing the Virtual Labs experiments. It provides:
+
  - **Enhanced user experience:** The PWA offers a smooth and responsive interface optimized for mobile devices.
  - **Wider reach:** By integrating your experiments into the PWA, you'll expose them to a broader user base.
 
