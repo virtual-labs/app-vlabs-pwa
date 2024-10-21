@@ -32,7 +32,7 @@ Google Sheet Link: [PWA-Onboarding-Sheet](https://docs.google.com/spreadsheets/d
 <b> Experiment URL | <b> Fill your hosted experiment url
 <b> Image of the experiment| <b> Fill the public link to the image in the experiment repository
 <b> Description| <b> Fill the description of the experiment in 10- 20 words
-<b> Tags| <b> Fill the tags of the experiment as a omma-separated list
+<b> Tags| <b> Fill the tags of the experiment as a comma-separated list
 
 **A. Experiment URL**
 
