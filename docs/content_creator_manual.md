@@ -27,12 +27,12 @@ To include your experiment in the PWA, please fill the following details in the 
 
 Google Sheet Link: [PWA-Onboarding-Sheet](https://docs.google.com/spreadsheets/d/1ohrWAzEYdiDQTBM52AUhup2nZB3JRVsm2dG2n9-FHh0/edit?usp=sharing)
 
-<b>S No | <b>Fill the Serial Number of the entry
-:--|:--|
-<b>Experiment URL | <b>Fill your hosted experiment URL 
-<b>Image of the experiment | <b>Fill the public link to the image in the experiment repository 
-<b>Description | <b>Fill the description of the experiment in 10-20 words 
-<b>Tags | <b>Fill the tags of the experiment as a comma-separated list 
+| **S No**                    | **Fill the Serial Number of the entry**                        |
+|-----------------------------|----------------------------------------------------------------|
+| **Experiment URL**          | Fill your hosted experiment URL                                |
+| **Image of the experiment** | Fill the public link to the image in the experiment repository |
+| **Description**             | Fill the description of the experiment in 10-20 words          |
+| **Tags**                    | Fill the tags of the experiment as a comma-separated list      |
 
 **A. Experiment URL**
 
