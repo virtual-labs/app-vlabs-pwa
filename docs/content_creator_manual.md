@@ -36,7 +36,7 @@ Google Sheet Link: [PWA-Onboarding-Sheet](https://docs.google.com/spreadsheets/d
 
 **A. Experiment URL**
 
-Please provide the web address (URL) of the experiment you want to include in the PWA.  This needs to the 
+Please provide the web address (URL) of the experiment you want to include in the PWA.  This needs to be hosted on the Virtual Labs central website. 
 
 **B. Image of the experiment**
 
