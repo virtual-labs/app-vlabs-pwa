@@ -23,7 +23,7 @@ To add an experiment, the following conditions must be met:
 
 ## How to add your experiment to the PWA?
 
-To include your experiment in the PWA, please fill the following details in the "Your Institute" tab of the Google Sheet.
+To include your experiment in the PWA, please complete the required details in the 'Your Institute' tab of the Google Sheet. Once done, send an email to ravi.kiran@vlabs.ac.in requesting the addition of your experiments to the PWA. 
 
 Google Sheet Link: [PWA-Onboarding-Sheet](https://docs.google.com/spreadsheets/d/1ohrWAzEYdiDQTBM52AUhup2nZB3JRVsm2dG2n9-FHh0/edit?usp=sharing)
 
