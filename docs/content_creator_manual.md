@@ -27,7 +27,7 @@ To include your experiment in the PWA, please complete the required details in t
 
 Google Sheet Link: [PWA-Onboarding-Sheet](https://docs.google.com/spreadsheets/d/1ohrWAzEYdiDQTBM52AUhup2nZB3JRVsm2dG2n9-FHh0/edit?usp=sharing)
 
-<img src="./images/table-for-pwa.png" alt="Details Table" style="max-width: 80%; height: auto;">
+<img src="https://raw.githubusercontent.com/virtual-labs/app-vlabs-pwa/refs/heads/main/docs/images/table-for-pwa.png" alt="Details Table" style="max-width: 80%; height: auto;">
 
 **A. Experiment URL**
 
