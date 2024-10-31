@@ -27,12 +27,7 @@ To include your experiment in the PWA, please complete the required details in t
 
 Google Sheet Link: [PWA-Onboarding-Sheet](https://docs.google.com/spreadsheets/d/1ohrWAzEYdiDQTBM52AUhup2nZB3JRVsm2dG2n9-FHh0/edit?usp=sharing)
 
-| **S No**                    | **Fill the Serial Number of the entry**                        |
-|-----------------------------|----------------------------------------------------------------|
-| **Experiment URL**          | Fill your hosted experiment URL                                |
-| **Image of the experiment** | Fill the public link to the image in the experiment repository |
-| **Description**             | Fill the description of the experiment in 10-20 words          |
-| **Tags**                    | Fill the tags of the experiment as a comma-separated list      |
+<img src="./images/table-for-pwa.png" alt="Details Table" style="max-width: 80%; height: auto;">
 
 **A. Experiment URL**
 
