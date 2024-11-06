@@ -29,7 +29,7 @@ Google Sheet Link: [PWA-Onboarding-Sheet](https://docs.google.com/spreadsheets/d
 
 <img src="https://raw.githubusercontent.com/virtual-labs/app-vlabs-pwa/refs/heads/main/docs/images/table-for-pwa.png" alt="Details Table" style="max-width: 80%; height: auto;">
 
-<img src="./images/sheet-image.png" alt="sheet image" style="max-width: 80%; height: auto;">
+<img src="https://raw.githubusercontent.com/virtual-labs/app-vlabs-pwa/main/docs/images/sheet-image.png" alt="sheet image" style="max-width: 80%; height: auto;">
 
 **A. Experiment URL**
 Please provide the web address (URL) of the experiment you want to include in the PWA.  This needs to be hosted on the Virtual Labs central website. 
@@ -66,7 +66,7 @@ To provide a concise description for each experiment, kindly write a brief summa
 Refer the experiment name, aim, theory and online sources and list relevant tags. Enter the tags as a comma separated list in the Tags column in the sheet. list out at least 5 tags for each  experiment. The tags must be comma separated. Each tag can  have space separated words, or have hyphens “-”. Use of any  other characters are not permitted. The tags should be strictly relevant  to the experiment. Do not include the experiment name, lab name, institute name and discipline name as tags.
 
 ### Example 
-<img src="./images/sample-for-tags.png" alt="Details Table" style="max-width: 80%; height: auto;">
+<img src="https://raw.githubusercontent.com/virtual-labs/app-vlabs-pwa/main/docs/images/sample-for-tags.png" alt="Details Table" style="max-width: 80%; height: auto;">
 
 ## Conclusion
 By following the steps outlined in this guide and filling out the experiment information sheet, you'll be well on your way to sharing your valuable experiments with a wider audience and enriching the learning experience within the Virtual Labs PWA. If you have any questions, please don't hesitate to contact us @ ravi.kiran@vlabs.ac.in. 
