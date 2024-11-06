@@ -29,7 +29,7 @@ Google Sheet Link: [PWA-Onboarding-Sheet](https://docs.google.com/spreadsheets/d
 
 <img src="https://raw.githubusercontent.com/virtual-labs/app-vlabs-pwa/refs/heads/main/docs/images/table-for-pwa.png" alt="Details Table" style="max-width: 80%; height: auto;">
 
-<img src="./images/sheet-image.png" alt="Details Table" style="max-width: 80%; height: auto;">
+<img src="./images/sheet-image.png" alt="sheet image" style="max-width: 80%; height: auto;">
 
 **A. Experiment URL**
 Please provide the web address (URL) of the experiment you want to include in the PWA.  This needs to be hosted on the Virtual Labs central website. 
