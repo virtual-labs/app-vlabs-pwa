@@ -21,17 +21,12 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Change into homepage directory
-        run: cd homepage
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build the App
-        run: npm run build
-
-      - name: Change back into the root directory
-        run: cd ../
+      - name: Build app inside homepage directory
+        run: |
+          cd homepage
+          npm install
+          npm run build
+          cd ../
 
       - name: Set AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -42,7 +37,6 @@ jobs:
 
       - name: Deploy to S3
         run: |
-          homepage/build/* -f
           aws s3 sync ./homepage/build/* s3://app.vlabs.ac.in --delete
 
       - name: invalidate cloudfront cache
