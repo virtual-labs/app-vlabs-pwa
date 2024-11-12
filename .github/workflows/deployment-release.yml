@@ -22,9 +22,7 @@ jobs:
           node-version: '20'
 
       - name: Change into homepage directory
-        run: |
-          # We change the current directory to 'homepage' where our application code is located.
-          cd homepage
+        run: cd homepage
 
       - name: Install dependencies
         run: npm install
@@ -33,8 +31,7 @@ jobs:
         run: npm run build
 
       - name: Change back into the root directory
-        run: |
-          cd ../
+        run: cd ../
 
       - name: Set AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
