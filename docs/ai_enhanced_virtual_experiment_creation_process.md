@@ -107,7 +107,7 @@ If you plan to add pages beyond those defined in the standard structure, include
 
    
 
-### Step 2 \- Creating the Simulation
+### Step 2 Creating the Simulation
 
 In this step, you will define the visual layout of your experiment and implement its underlying logic. We encourage you to start by using the recommended responsive UI template, which provides a clean layout, floating controls, and mobile-friendly design. Next, using your lab’s proposal document, provide the experiment objective and structure to your AI assistant (like GitHub Copilot) to begin generating the required HTML and JavaScript logic. You’ll iteratively test, debug, and refine the experiment until it behaves as expected.
 
@@ -170,7 +170,7 @@ Each template also  includes the following features:
 * Consider adding a **compact instructions panel** accessible via a floating button that can be toggled on or off. This allows users to refer to guidance without crowding the main interface and if at all you need the controls at all times of the experiment (better to move it to one side) make sure that no scrolling is required by the user to view the whole page.  
 * If the experiment is not fully optimized for mobile devices, consider adding a **JavaScript script (like** [this](https://github.com/virtual-labs/ctnt-ai-exp-template/blob/main/mobile-detection.js)**)**   to notify users  how to enhance responsiveness and usability on smaller screens.
 
-### **Step 3 \- Creating the Content**
+### **Step 3 Creating the Content**
 
 Next, you will generate the content for your experiment using an AI tool. We recommend starting with the **standard prompt** provided below (highlighted in blue). While we have tested this prompt using **Cursor**, you are free to use any AI tool you are comfortable with.
 
@@ -217,7 +217,7 @@ Refer to the README file located in the ‘experiment’ folder for creating con
 
 Do not create any new files or folders. Only edit the existing files.
 
-### **Step 4 \-  Build and Test the Experiment**
+### **Step 4 Build and Test the Experiment**
 
 Once your experiment content is ready and structured, the next step is to build and test it using the Virtual Labs build process. This ensures your experiment renders correctly, passes validation checks, and is ready for deployment. This step also allows you to preview the experiment locally and make iterative improvements as needed.
 
