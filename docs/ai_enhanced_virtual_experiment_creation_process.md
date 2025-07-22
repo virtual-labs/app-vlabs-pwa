@@ -19,18 +19,17 @@ This guide is intended for:
 Whether you're just starting or need a refresher on best practices, this document outlines the procedure for setting up your environment, preparing content, and building a Virtual Lab experiment using the AI Tools, VSCode editor and the lab management tools.
 
 
-## Guidelines for Creating a Virtual Lab Experiment {#guidelines-for-creating-a-virtual-lab-experiment}
-
+## Guidelines for Creating a Virtual Lab Experiment
 ### Step 1 Getting Started 
 Before you begin developing a Virtual Lab experiment using AI tools, it's important to complete a few preparatory steps. This section ensures that you have the necessary background, approvals, and environment setup. Completing these steps will help you generate high-quality, standards-compliant experiments efficiently.
 
-#### **a. Prerequisites** 
+#### a. Prerequisites
 
 1. Ensure you have the **proposal document** for the lab.  
 2. **Confirm with your Subject Matter Expert (SME)** the intended level of the lab/experiments — beginner, intermediate, or advanced — so you can reflect this accurately in the AI prompt.  
 3. You should be **familiar with the Virtual Labs development process** and have completed the onboarding steps as outlined [here](https://vlead.vlabs.ac.in/development/#onboarding-process).
 
-#### **b. Setup**
+#### b. Setup
 
 **Download and Install VSCode**
 
@@ -52,7 +51,7 @@ Install the GitHub Copilot extension in VS Code. This will enable AI-assisted co
 
 We have used **Claude-4-sonnet** as the AI model in our CoPilot settings. However, you are free to choose the latest tested version or any other AI tool that you find appropriate or are more comfortable with.
 
-#### **c. Clone the Repository**
+#### c. Clone the Repository
 
 1. Create a Working Directory. Create a dedicated folder to store your AI Tool based experiment projects.  
 2. Clone the Experiment Repository inside your working directory, and clone the development branch of your experiment repository using the command below. Replace your-experiment-repository-link with the actual repository URL:
@@ -111,7 +110,7 @@ If you plan to add pages beyond those defined in the standard structure, include
 
 In this step, you will define the visual layout of your experiment and implement its underlying logic. We encourage you to start by using the recommended responsive UI template, which provides a clean layout, floating controls, and mobile-friendly design. Next, using your lab’s proposal document, provide the experiment objective and structure to your AI assistant (like GitHub Copilot) to begin generating the required HTML and JavaScript logic. You’ll iteratively test, debug, and refine the experiment until it behaves as expected.
 
-#### **Choosing a Starter UI Template for Your Experiment**
+#### Choosing a Starter UI Template for Your Experiment
 
         First, decide on the initial UI layout for the experiment. Some good starter templates are:
 
@@ -136,9 +135,7 @@ Each template also  includes the following features:
 * A mobile detection script to see if the user is using it in a phone or in a desktop and provide the user with appropriate messages.
 
 
-#### **Figuring out the Logic of the Experiment**
-
-     
+#### Figuring out the Logic of the Experiment
 * First, locate the **Lab Proposal Document**. You can search for your lab [here](https://github.com/virtual-labs/engineers-forum/issues).  
 * Next, in **Copilot**, add the `experiment.html` and `experiment.js` files to the context. Then, provide Copilot with all relevant details from the Lab Proposal Document. Based on this input, Copilot should automatically generate the experiment logic and make the necessary edits in **Agent Mode**.  
 * Run the page using **Live Server** to preview the changes and test the experiment logic. Open the browser console to check for any JavaScript errors or warnings.  
@@ -156,7 +153,7 @@ Each template also  includes the following features:
   \[The Existing Code\]  
   "
 
-#### **Debugging Experiment Logic with AI Assistance**
+#### Debugging Experiment Logic with AI Assistance
 
 * Start by checking the **console** for any errors or warnings.  
 * If the experiment logic isn't working as expected even after a few attempts, try **manually debugging** the code using `console.log` statements. This will help you trace the code execution and inspect variable values at different points.  
@@ -164,7 +161,7 @@ Each template also  includes the following features:
 * With a bit of time and effort, you should be able to get the experiment logic working as intended.
 
 
-#### **UI Optimization Tips for Better Usability**
+#### UI Optimization Tips for Better Usability
 
 * Use **floating buttons** to hide controls that are only needed during the initial setup of the experiment. This helps declutter the interface and improves user experience.  
 * Consider adding a **compact instructions panel** accessible via a floating button that can be toggled on or off. This allows users to refer to guidance without crowding the main interface and if at all you need the controls at all times of the experiment (better to move it to one side) make sure that no scrolling is required by the user to view the whole page.  
