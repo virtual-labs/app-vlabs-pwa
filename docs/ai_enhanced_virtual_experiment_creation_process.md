@@ -146,10 +146,10 @@ Each template also  includes the following features:
   <span style="color: blue;">No need to keep the old redundant code for the template. Feel free to remove them and optimise the space</span>  
   <span style="color: blue;">Do not change the basic structure of the HTML file.Since, I want this type of layout only.</span>  
  <span style="color: blue;">Feel free to change the text in the HTML file to reflect correctly for the current experiment</span>  
- <span style="color: blue;">Do not change the existing CSS </span> 
-    <span style="color: blue;">OPTIONAL</span>  
+ <span style="color: blue;">Do not change the existing CSS </span> <br>
+    <span style="color: red;">OPTIONAL</span>  
   <span style="color: blue;">I have also given you some code below to help you with the task.</span>  
-  <span style="color: blue;">The Existing Code </span>
+  <span style="color: red;">The Existing Code </span>
 
 #### Debugging Experiment Logic with AI Assistance
 
