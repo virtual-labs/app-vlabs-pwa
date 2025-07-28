@@ -111,8 +111,7 @@ If you plan to add pages beyond those defined in the standard structure, include
 In this step, you will define the visual layout of your experiment and implement its underlying logic. We encourage you to start by using the recommended responsive UI template, which provides a clean layout, floating controls, and mobile-friendly design. Next, using your lab’s proposal document, provide the experiment objective and structure to your AI assistant (like GitHub Copilot) to begin generating the required HTML and JavaScript logic. You’ll iteratively test, debug, and refine the experiment until it behaves as expected.
 
 #### Choosing a Starter UI Template for Your Experiment
-
-        First, decide on the initial UI layout for the experiment. Some good starter templates are:
+First, decide on the initial UI layout for the experiment. Some good starter templates are:
 
 1) [Discrete Labs \- Recursion](https://github.com/virtual-labs/ctnt-ai-exp-template/tree/main/template%201)
 
@@ -141,17 +140,16 @@ Each template also  includes the following features:
 * Run the page using **Live Server** to preview the changes and test the experiment logic. Open the browser console to check for any JavaScript errors or warnings.  
 * If errors appear, you can ask Copilot to resolve them by providing the error message along with the relevant code snippet or file in the context.  
 * Use the following **Starter Prompt** (highlighted in blue). Replace the placeholder text (highlighted in red) with the specifics of your experiment.  
-  “The content of the experiment is about \[describe the topic possibly from the Proposal\].  
-  Edit the content of the HTML and the JS template  file to accurately work for the current experiment.  
-  Make sure that whatever you do, does not break anything.  
-  No need to keep the old redundant code for the template. Feel free to remove them and optimise the space  
-  Do not change the basic structure of the HTML file.Since, I want this type of layout only  
-  Feel free to change the text in the HTML file to reflect correctly for the current experiment  
-  Do not change the existing CSS  
-  \<OPTIONAL\>  
-  I have also given you some code below to help you with the task.  
-  \[The Existing Code\]  
-  "
+  <span style="color: blue;">The content of the experiment is about</span> <span style="color: red;">[describe the topic possibly from the Proposal]</span>.  
+  <span style="color: blue;">Edit the content of the HTML and the JS template  file to accurately work for the current experiment.</span>  
+  <span style="color: blue;">Make sure that whatever you do, does not break anything.</span>  
+  <span style="color: blue;">No need to keep the old redundant code for the template. Feel free to remove them and optimise the space</span>  
+  <span style="color: blue;">Do not change the basic structure of the HTML file.Since, I want this type of layout only.</span>  
+ <span style="color: blue;">Feel free to change the text in the HTML file to reflect correctly for the current experiment</span>  
+ <span style="color: blue;">Do not change the existing CSS </span> 
+    <span style="color: blue;">OPTIONAL</span>  
+  <span style="color: blue;">I have also given you some code below to help you with the task.</span>  
+  <span style="color: blue;">The Existing Code </span>
 
 #### Debugging Experiment Logic with AI Assistance
 
