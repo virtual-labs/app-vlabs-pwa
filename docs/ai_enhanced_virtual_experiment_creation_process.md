@@ -202,13 +202,13 @@ You are an expert in creating content for the experiments for Virtual Labs.
 I have a sample experiment that I want to convert into a Virtual Lab experiment. Modify the current markdown & json files to create the textual/visual content of the experiment  
 Refer to the README file located in the ‘experiment’ folder for creating content.
 
-1. aim.md, objective.md, and theory.md need to be filled up with the respective content. Modify their content as per the page type in the context of the experiment name  \- \<your-experiment-name\> for the lab \- \<lab-name\>. Be sure these changes are in sync with the simulation we just implemented. Use images, graphs etc to support your content, if needed.  
+1. aim.md, objective.md, and theory.md need to be filled up with the respective content. Modify their content as per the page type in the context of the experiment name  <span style="color: red><your-experiment-name></span> for the lab <span style="color: red><lab-name></span>. Be sure these changes are in sync with the simulation we just implemented. Use images, graphs etc to support your content, if needed.  
 2. Modify procedure.md as per the simulation changes just been implemented.   
 3. Provide suitable references like books, educational material, video links, publications, articles, in references.md.  
 4. The quiz pages- pretest.json and posttest.json follow a certain format and logic. Without changing the format, update the questions, answers, along with their respective explanations. The questions are of 3 difficulty levels- beginner, intermediate, and advanced. Note that the content should be consistent with the experiment. Ensure questions are relevant, well-worded, and aligned with the learning objectives of the experiment.  
 5. For contributors.md, fill in the following details in the format given in the file. Do not create a new format.  
-   1. \<Subject matter expert’s details\>  
-   2. \<Developer’s details\>
+   1. <span style="color: red><Subject matter expert’s details></span>  
+   2. <span style="color: red><Developer’s details></span>
 
 Do not create any new files or folders. Only edit the existing files.
 
