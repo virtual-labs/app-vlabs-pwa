@@ -172,43 +172,43 @@ Next, you will generate the content for your experiment using an AI tool. We rec
 To proceed:
 
 * Replace the **placeholder text** in the prompt (highlighted in red) with details specific to your experiment.  
-* Set the entire `experiment` folder as the **context** for your AI tool to ensure consistent and structured output.  
+* Set the entire **experiment** folder as the **context** for your AI tool to ensure consistent and structured output.  
 * Feel free to **customize the prompt** based on your specific requirements.
 
 **Experiment Content Structure**
 
-**Required `.md` Files:**
+**Required .md Files:**
 
-* `aim.md`  
-  * `theory.md`  
-  * `procedure.md`  
-  * `references.md`  
-  * `contributors.md`
+  * aim.md  
+  * theory.md 
+  * procedure.md  
+  * references.md  
+  * contributors.md
 
-* **Required `.json` Files:**  
-  * `pretest.json`  
-  * `posttest.json`
+* **Required .json Files:**  
+  * pretest.json
+  * posttest.json
 
-* **Optional empty `.md` Files to be added  (if needed):**   
-  * `troubleshooting.md`  
-  * `glossary.md`  
-  * `trivia.md`  
-  * `extended-study.md`  
-  * `assessment.md`
+* **Optional empty .md Files to be added  (if needed):**   
+  * troubleshooting.md
+  * glossary.md  
+  * trivia.md  
+  * extended-study.md  
+  * assessment.md
 
 **Sample Prompt**
 
-You are an expert in creating content for the experiments for Virtual Labs.   
+<p style="color:blue;">You are an expert in creating content for the experiments for Virtual Labs.   
 I have a sample experiment that I want to convert into a Virtual Lab experiment. Modify the current markdown & json files to create the textual/visual content of the experiment  
-Refer to the README file located in the ‘experiment’ folder for creating content.
-
-1. aim.md, objective.md, and theory.md need to be filled up with the respective content. Modify their content as per the page type in the context of the experiment name  <span style="color: red><your-experiment-name></span> for the lab <span style="color: red><lab-name></span>. Be sure these changes are in sync with the simulation we just implemented. Use images, graphs etc to support your content, if needed.  
-2. Modify procedure.md as per the simulation changes just been implemented.   
-3. Provide suitable references like books, educational material, video links, publications, articles, in references.md.  
-4. The quiz pages- pretest.json and posttest.json follow a certain format and logic. Without changing the format, update the questions, answers, along with their respective explanations. The questions are of 3 difficulty levels- beginner, intermediate, and advanced. Note that the content should be consistent with the experiment. Ensure questions are relevant, well-worded, and aligned with the learning objectives of the experiment.  
-5. For contributors.md, fill in the following details in the format given in the file. Do not create a new format.  
-   1. <span style="color: red><Subject matter expert’s details></span>  
-   2. <span style="color: red><Developer’s details></span>
+Refer to the README file located in the ‘experiment’ folder for creating content.</p>
+<ol style="color:blue;">
+<li>aim.md, objective.md, and theory.md need to be filled up with the respective content. Modify their content as per the page type in the context of the experiment name  <span style="color:red;">your-experiment-name</span> for the lab <span style="color:red;">lab-name.</span> Be sure these changes are in sync with the simulation we just implemented. Use images, graphs etc to support your content, if needed.</li>
+<li>Modify procedure.md as per the simulation changes just been implemented.</li>   
+<li>Provide suitable references like books, educational material, video links, publications, articles, in references.md.</li>  
+<li>The quiz pages- pretest.json and posttest.json follow a certain format and logic. Without changing the format, update the questions, answers, along with their respective explanations. The questions are of 3 difficulty levels- beginner, intermediate, and advanced. Note that the content should be consistent with the experiment. Ensure questions are relevant, well-worded, and aligned with the learning objectives of the experiment.</li>  
+<li> For contributors.md, fill in the following details in the format given in the file. Do not create a new format.</li>  
+   <ol><li><span style="color:red;">Subject matter expert’s details</span></li>
+   <li><span style="color:red;">Developer’s details</span></li></ol></ol>
 
 Do not create any new files or folders. Only edit the existing files.
 
